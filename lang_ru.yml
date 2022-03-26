@@ -1,0 +1,79 @@
+# Для русских пользователей
+
+#Основное
+MAIN_PREFIX: '§cHyperNetwork §7| §f'
+
+MAIN_MOTD: |-
+  §c§lHYPER §f§lNETWORK §8§k|§d1.12.2-1.18 §8§k|§f mc.hyper.me §8§k|
+  §fСкидки на донат в честь открытия, давай быстрее!
+  
+CORE_ERROR_MOTD: '§cСоединение с сетевой архитектурой не возможно'
+
+BETA_TESTERS_MODE_ON: |-
+  §c§lHYPER §f§lNETWORK §8§k| §7Внимание, сервер доступен исключительно для бета-тестеров, дабы найти наличие ошибок, недоработок. Попробовать себя в этом деле - §nbeta.hyper.me
+  §r
+  
+ 
+#Сообщения кора
+CORE_DISCONNECTED_MSG: '§cСоединение с сетевой архитектурой утрачено, останавливаем под-сервера, повторите попытку входа позже!'
+CORE_SUCESSFULLY_RECONNECT: '§aСоединение с сетевой архитектурой налажено, работа под-серверов возобновлена, приятной игры!'
+
+CORE_GIVE_GROUP_MSG: '§fВ ваш профиль были внесены изминения администрацией. Ваша группа изменена с %old% на %group%'
+
+# Авторизация сообщения
+PREFIX: '§c§lAUTH §7| §f'
+
+AUTH_LOGIN_COMMAND: '%hyper_auth%Используйте §c/login <Пароль>, §fчтобы авторизироваться'
+AUTH_REGISTER_COMMAND: '%hyper_auth%Используйте §c/reg <Пароль> <Повтор пароля>, чтобы зарегистрироваться'
+
+AUTH_TITLE_LOGIN: '§cВойдите в систему'
+AUTH_SUBTITLE_LOGIN: '§fУ вас осталось %hyper_auth_time% секунд'
+
+AUTH_TITLE_LOGIN: '§aЗарегистрируйтесь'
+AUTH_SUBTITLE_LOGIN: '§fУ вас осталось %hyper_auth_time% секунд'
+
+AUTH_DISCONNECT_NO_SERVERS: '§сК сожалению, все сервера авторизации заняты, повторите попытку позже!'
+AUTH_DISCONNECT_NO_HUBS: '§cК сожалению, все под-сервера заняты, повторите попытку позже!'
+
+AUTH_INCORRECT_PASSWORD: '%hyper_auth%§cВы ввели неверный пароль, у вас осталось %hyper_auth_tries% попыток'
+AUTH_KICK_INCORRECT_PASSWORD: '%hyper_auth%§cВаш аккаунт кикнут за подбор пароля!'
+AUTH_BAN_INCORRECT_PASSWORD: |-
+  §cВы исчерпали все попытки на вход.
+  §cМы блокируем ваш IP на §e10 §cминут
+  
+AUTH_NO_VK_VERIFY: |-
+  §c⚠ Внимание! §fУ Вас не привязана страница §bВКонтакте §fк своему аккаунту.
+  Сделав это, Вы сможете управлять аккаунтом.
+  Если Вас взломают, то Вы легко сможете восстановить свой аккаунт!
+  Сделайте это прямо сейчас, написав в сообщения группы: §e%vk%
+  Команда - §b!привязать [ник] [пароль]
+  
+AFK_TITLE: '§cВыйдите из AFK режима'
+AFK_SUBTITLE: '§7иначе, Вы будете перемещены в Limbo-сервер'
+SONG_AFK_MODE: 'NOTE_PLING'
+
+# Лобби
+GENERAL_LOBBY_SCOREBOARD_TITLE: |-
+  §8» §cHYPER NETWORK
+  §8» §cHYPER NETWORK
+  §8» §cHYPER NETWORK
+GENERAL_LOBBY_SCOREBOARD_LINES: |-
+    §r
+     §7Профиль:
+      §fГруппа: %group%
+      §fЗолоты: §6%golds%
+      §fХайпики: §c%hypics%
+    §r
+      §fУровень: §d%level%
+      §fОпыт: §b%exp%§f/§b%level_max_exp%
+    §r
+      §fПрогресс уровня: §a%level_exp_percent%
+      §a↪ %level_bar%
+    §r
+      §fОбщий онлайн: §a%online%
+      §fТекущий сервер: §a%server%
+    §r
+             §ewww.hyper.me       
+      
+      
+      
