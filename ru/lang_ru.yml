@@ -1,0 +1,394 @@
+# Для русских пользователей
+
+#Основное
+main-prefix: '§cHyperNetwork §7| §f'
+
+main_motd: |-
+  §c§lHYPER §f§lNETWORK §8§k|§d1.12.2-1.18 §8§k|§f mc.hyper.me §8§k|
+  §fСкидки на донат в честь открытия, успей приобрести привилегию!
+  
+core_error_motd: '§cСоединение с сетевой архитектурой не возможно'
+
+beta_mode_on: |-
+  §c§lHYPER §f§lNETWORK §8§k| §7Внимание, сервер доступен исключительно для бета-тестеров, дабы найти наличие ошибок, недоработок. Попробовать себя в этом деле - §nbeta.hyper.me
+  §r
+  
+#Сообщения кора
+core_disconnect_msg: '§cСоединение с сетевой архитектурой утрачено, останавливаем под-сервера, повторите попытку входа позже!'
+core_sucess_reconnect_msg: '§aСоединение с сетевой архитектурой налажено, работа под-серверов возобновлена, приятной игры!'
+
+core_changes_profile_msg: '§fВ ваш профиль были внесены изминения администрацией. Ваша группа изменена с %old% на %group%'
+
+maintenance_connect_fail: '§cНа проекте проводятся технические работы!'
+development_mode_connect_fail: '§cОшибка, данный режим доступен только игрокам с группой &6[Beta]'
+
+group_expired: |-
+  §fСрок действия привилегии %group% §fистёк, она была снята
+  §8* §fВы можете продлить её срок - §dshop.hyper.me
+group_expires: '§fСрок действия привилегии %group% §fистечёт через §d%time%'
+group_expires_information: |-
+  §8* §fПо истечению Вам будет возвращена Ваша прошлая привилегия
+  §8* §fВы можете купить или продлить привилегию на сайте §dshop.hyper.me
+  
+group_command_usage: |-
+  §cHyperGroups §7- §fПомощь по командам:
+  §r
+  §c/group §7- §fОтобразить список имеющихся команд
+  §c/group list §7- §fОтобразить все имеющиеся группы на проекте
+  §c/group add §7- §fДобавить новую группу в список существующих
+  §c/group remove §7- §fУдалить любую группу из списка существующих
+  §r
+  
+core_time_out: |-
+  §cВозникла ошибка в работе кора, некоторые функции могут перестать функцианировать через некоторое время.
+  §cМы делаем всё, чтобы восстановить его работу. Ожидайте.
+  
+core_error_functions: |-
+  §cОшибка, выполненная вами функция не может быть исполнена из-за ошибок кора. Повторите попытку позже, либо
+  §cсообщите администрации об ошибке!
+
+
+# Авторизация сообщения
+prefix: '§c§lAUTH §7| §f'
+
+auth_login_command: '%hyper_auth%Используйте §c/login <Пароль>, §fчтобы авторизироваться'
+auth_register_command: '%hyper_auth%Используйте §c/reg <Пароль> <Повтор пароля>, чтобы зарегистрироваться'
+
+auth_title_login: '§cВойдите в систему'
+auth_subtitle_login: '§fУ вас осталось %hyper_auth_time% секунд'
+
+auth_title_register: '§aЗарегистрируйтесь'
+auth_subtitle_register: '§fУ вас осталось %hyper_auth_time% секунд'
+
+auth_disconnect_no_servers: '§сК сожалению, все сервера авторизации заняты, повторите попытку позже!'
+auth_disconnect_no_hubs: '§cК сожалению, все под-сервера заняты, повторите попытку позже!'
+
+auth_incorrect_password: '%hyper_auth%§cВы ввели неверный пароль, у вас осталось %hyper_auth_tries% попыток'
+auth_kick_incorrect_password: '%hyper_auth%§cВаш аккаунт кикнут за подбор пароля!'
+auth_ban_incorrect_password: |-
+  §cВы исчерпали все попытки на вход.
+  §cМы блокируем ваш IP на §e10 §cминут
+  
+vk_security_notification: |-
+  §c⚠ Обезопасьте ваш игровой аккаунт привязав его к нашей группе VK: vk.com/hyperofficialmc,
+  §cесли, у вас отсутствует аккаунт VK, то можно привязать ваш аккаунт к Discord. 
+  
+afk_title: '§cВыйдите из AFK режима'
+afk_subtitle: '§7иначе, Вы будете перемещены в Limbo-сервер'
+song_afk_mode: 'NOTE_PLING'
+
+#Скорборды
+
+# Лобби
+general_lobby_scoreboard_title: |-
+  §8» §cHYPER NETWORK
+  §8» §cHYPER NETWORK
+  §8» §cHYPER NETWORK
+general_lobby_scoreboard_lines: |-
+    §r
+     §7Профиль:
+      §fГруппа: %group%
+      §fЗолота: §6%golds%
+      §fХайпики: §c%hypics%
+    §r
+      §fУровень: §d%level%
+      §fОпыт: §b%exp%§f/§b%level_max_exp%
+    §r
+      §fПрогресс уровня: §a%level_exp_percent%
+      §a↪ %level_bar%
+    §r
+      §fОбщий онлайн: §a%online%
+      §fТекущий сервер: §a%server%
+    §r
+             §ewww.hyper.me       
+             
+skywars_lobby_scoreboard_title: '§c§lSkyWars'
+skywars_lobby_scoreboard_lines: |-
+  §7%hypersw_date%
+  §r
+  §6Статистика SkyWars:
+  §fУбийства: §a%hypersw_kills%
+  §fПобеды: §a%hypersw_win%
+  §r
+  §6Статистика LuckyWars:
+  §r
+       §ewww.hyper.me
+
+# Авторизация
+general_auth_scoreboard_title: |-
+  §8» §cHYPER NETWORK §8» §cAuth
+  §8» §cHYPER NETWORK §8» §cAuth
+  §8» §cHYPER NETWORK §8» §cAuth
+general_auth_scoreboard_lines: |-
+  §fАвторизируйтесь используя:
+  §c/login <Пароль>,
+  §fили же зарегистрируйтесь используя:
+  §c/register <Пароль> <Повтор>.
+  §fУ вас есть 120 секунд!
+  §r
+             §ewww.hyper.me
+
+# Лимбо
+general_limbo_scoreboard_title: |-
+  §8» §cHYPER NETWORK §8» §cLimbo
+  §8» §cHYPER NETWORK §8» §cLimbo
+  §8» §cHYPER NETWORK §8» §cLimbo
+general_limbo_scoreboard_lines: |-
+  §fЕсли вы оказались на данном сервере,
+  §fзначит наши сервера подверглись отключению, либо
+  §fвы слишком долго находились §cAFK.
+  §r
+               §ewww.hyper.me
+  
+# Лобби
+lobby_joined_title: '§c§lHYPER §f§lNETWORK'
+lobby_joined_subtitle: '§fДобро пожаловать!'
+lobby_first_join_message: |-
+  §fДобро пожаловать на §c§lHYPER §f§lNETWORK!
+  §r
+  §fПрежде чем начать игру, мы предлагаем вам ознакомиться с нашим сервером.
+  §fА именно, посмотреть краткий, небольшой туториал.
+  §fЧтобы начать просмотр туториала, напишите команду - §e/hypertutorial§f, либо
+  §fнажмите на NPC с права от вашего спавна! Удачной игры.
+lobby_auto_language_select: '§fЯзык выбран автоматический по IP как %ip_language%'
+lobby_fireworks_players: '§fВесёлый маг выпустил фейерверки в небо!'
+
+# Голограммы (Это всё относится к Лобби)
+hologram_mystery_case_line_1: '§dЗамысловатая коробка'
+hologram_mystery_case_line_2: '§eОжидает вашего пробуждения!'
+
+hologram_game_select_no_servers_line_1: '%game_name%'
+hologram_game_select_no_servers_line_2: '§cНет доступных серверов!'
+hologram_game_select_no_servers_line_3: '§eНажмите, чтобы присоединиться!'
+hologram_game_select_no_servers_line_4: '§fСейчас играет §a%players%§fигроков'
+
+hologram_npc_lobby_game_line_1: '§eНажмите, чтобы присоединиться!'
+hologram_npc_lobby_game_line_2: '§fСейчас играет §a%players%§fигроков'
+hologram_npc_lobby_game_line_3: '§fДоступных серверов: %servers%'
+
+hologram_skywars_lobby_line_1: '§dНедоступная коробка'
+hologram_skywars_lobby_line_2: '§cЧто-то пошло не так...'
+
+delivery_rewards_npc_hologram_line_1: '§dЕжедневные посылки'
+delivery_rewards_hologram_line_2: '§eНажмите, чтобы открыть посылки!'
+
+economy_converter_npc_hologram_line_1: '§dКонвертер экономики'
+economy_converter_npc_hologram_line_2: '§eНажмите, чтобы воспользоваться!'
+economy_converter_npc_hologram_line_3: '§cДоступно от 5 серверного уровня!'
+
+level_converter_npc_hologram_line_1: '§dКонвертер уровня'
+level_converter_npc_hologram_line_2: '§eНажмите, чтобы воспользоваться!'
+level_converter_npc_hologram_line_3: '§cДоступно от 5 серверного уровня!'
+
+spawn_teleport_sucessfully: '§fСексифули, всё секс!'
+spawn_admin_set_sucessfully: '§aУспешно!'
+spawn_admin_set_error: '§aХнык-Хнык:(!'
+
+# Проверка на читерство
+check_players_message: |-
+  §c§l========================================================================
+              §fВЫ БЫЛИ ВЫЗВАНЫ НА ПРОВЕРКУ ЗАПРЕЩЁННОГО ПО
+              §fВ СЛУЧАЕ ОТКАЗА/ВЫХОДА С СЕРВЕРА, ВАШ АККАУНТ
+              §fБУДЕТ ЗАБЛОКИРОВАН НА 14 ДНЕЙ!
+              §r
+              §fВАС УЖЕ ОЖИДАЮТ В ДИСКОРД-КАНАЛЕ "Проверка"
+              §9Discord: dsc.gg/hypernetworkmc
+              §fУ вас осталось 5 минут! Поторопитесь.
+              §r
+              §fP.S Если вы не успели, и получили блокировку,
+              §fнапишите администрации с кратким объяснением. Удачи!
+  §c§l========================================================================
+check_sucessfully: '§fВы прошли проверку, спасибо за честную игру!'
+check_unsucessfully: '§fК сожалению, Вы не прошли проверку. Мы вынуждены выдать вам наказание!'
+check_title: '§4ПОПАЛСЯ?'
+check_subtitle: '§7Переходи в дискорд, ссылка в чате!'
+
+# Предметы из хотбара (Написал их так, как они расположены в слотах)
+1: '§aИгровой локатор §7[ПКМ]'
+2: '§aИгровой профиль %player% §7[ПКМ]'
+4: '§aПривилегии §7[ПКМ]'
+5: '§aКосметические украшения §7[ПКМ]'
+8: '§aСкрыть игроков %s §7[ПКМ]'
+
+# Описание предметов из хотбара
+1: |-
+  §7Данный предмет поможет вам разобраться с
+  §7режимами на нашем проекте.
+2: |-
+  §7Этот предмет хранит в себе ваш персональный профиль,
+  §7с помощью него, Вы можете смотреть свою статистику.
+4: |-
+  §7Данный предмет поможет разобраться с покупкой привилегии/монет.
+5: |-
+  §7Откройте для себя мир прекрасной косметики.
+  §7Шляпы, анимированые головы, уникальная одежда, и многое другое...
+8: |-
+  §7Настройте видимость игроков так, как этого хотите Вы.
+
+# Кор
+stream_chat_announce: |-
+  §fСтример %streamer% §fзапустил трансляцию на платформе %stream_platform%
+  §fНазвание трансляции: §6%stream_title%
+  §fЗрителей: §a%viewers%
+  §r
+  §a↪ §7Перейти на трансляцию ↩
+  
+stream_chat_announce_two: |-
+  §r
+  §fНа данный момент на сервере проходит §a%count% §fтрансляций
+  §r
+  §a↪ §7Открыть меню с трансляциями ↩
+  
+stream_title_admin_announce: '§fАдминистратор %stream_admin% §fначал трансляцию'
+stream_subtitle_admin_announce: '§7Ссылка появилась в чате'
+
+automessages_1: |-
+          §fСкидки на донат в честь открытия!
+          §r
+          §fНа проекте проводятся §c§nОГРОМНЫЕ §fскидки на донат,
+          §fуспей купить себе привилегию или баланс на аккаунт.
+          §r
+                            %donate_site%
+
+# Гуи
+
+# Донат гуи
+donate_gui_premium: |-
+   §9[Premium] &7- §a85 руб
+   §r
+   §fВозможности:
+   §fПолёт во всех лобби при входе
+   §fПриветсвие при входе
+   §fВозможность выбора кастомного приветствия при входе
+   §fПускать фейерверки в лобби §7- §e/fw
+   §fВозможность заходить на заполненные сервера
+   §r
+donate_gui_reminder: |-
+   §6[Reminder] &7- 750 руб
+   §r
+   §rВозможности:
+   §fПолёт во всех лобби при входе
+   §fПриветсвие при входе
+   §fВозможность выбора §nЛЮБОГО кастомного приветствия при входе
+   §fПускать фейерверки в лобби §7- §e/fw
+   §fВозможность заходить на заполненные сервера
+   §fВозможность создавать свои игровые сервера §7- §e/hyperservers create <название>
+   §fДоступ ко всем ежедневным посылкам, в том числе и других привилегий
+   §fВозможность выдать донат другу/игроку на сервере §7(от §9[Premium] §7до §b[Galaxy]§7)
+   §fДоступ к чату донатеров
+   §fДоступ к лакшери комнате донатеров и администрации
+   §fДоступ к маскировке (Дизгайс)
+   
+# Профиль гуи
+profile_gui_title: 'Профиль игрока %hyper_profile%'
+profile_gui_name: '§aВаш персональный профиль'
+profile_gui_main_item_lore: |-
+  §fИгровая группа: %group%
+  §fЗолота: §6%golds%
+  §fХайпиков: §c%hypics%
+  §fУровень: %level%
+  §fОпыт: §b%exp%§f/§b%level_max_exp%
+  §r
+  §fПрогресс уровня: §a%level_exp_percent%
+      §a↪ %level_bar%
+  §r
+# Языки
+language_gui_title: 'Выбор языка'
+language_gui_name: '%language%'
+language_gui_lore: |-
+  §r
+  §cВнимание! Некоторые элементы на
+  §cсервере могут быть переведены не
+  §cполностью или не переведены во все
+  §r
+  §fПомочь нам с переводом - §evk.com/hyperofficialmc
+  §r
+language_gui_click_to_select: '§eНажмите, чтобы выбрать этот язык'
+language_gui_already_selected: '§cОшибка, данный язык уже установлен'
+language_changed: '§cfВаш язык был изменён на §d%language%'
+
+# Редкость предметов
+rarity_none: 'Отсутствует'
+rarity_common: 'Обычный'
+rarity_epic: 'Эпический'
+rarity_legendary: 'Легендарный'
+
+# Бустеры
+booster_coins_one: 'Бустер монет x2 на 1.5 часа'
+booster_coins_two: 'Бустер монет x3 на 2 часа'
+booster_coins_three: 'Бустер монет x4 на 3 часа'
+
+
+booster_exp_one: 'Бустер монет x2 на 1.5 часа'
+booster_exp_two: 'Бустер монет x3 на 2 часа'
+booster_exp_three: 'Бустер монет x4 на 3 часа'
+
+
+# Скайварс
+skywars_player_join: '§c§lSkyWars §7| {player} §fприсоединился к игре §7({online}/{max})'
+skywars_player_quit: '§c§lSkyWars §7| {player} §fотключился от игры §7({online}/{max})'
+skywars_timer_ticks: '§c§lSkyWars §7| §fИгра начнётся через §c{time} сек'
+
+skywars_bought_no_onough_money: '§cОшибка, у вас недостаточно средств для покупки этого предмета!'
+skywars_bought_sucessfully_buy: '§aПредмет §e{item_name} §aуспешно куплен'
+
+# Сообщения убийств
+soon:
+
+skywars_pvp_activated: '§aPVP-режим активирован, соберитесь!'
+
+skywars_wait_timer_5: 'До начала игры: §a❺'
+skywars_wait_timer_4: 'До начала игры: §e❹'
+skywars_wait_timer_3: 'До начала игры: §6❸'
+skywars_wait_timer_2: 'До начала игры: §c❷'
+skywars_wait_timer_1: 'До начала игры: §4❶'
+
+skywars_start_title: '§cSkyWars'
+skywars_start_subtitle: '§fГотовьтесь побеждать!'
+
+skywars_end_title: '§c§lИГРА ОКОНЧЕНА!'
+skywars_end_subtitle: '§fДля выхода из игры, напишите - §e/leave'
+
+skywars_killer_top_format: '{player} §f- §a{kills} убийств'
+skywars_killer_top_unkown: '§7Отсутствует'
+
+# NPC
+skywars_npc_solo: |-
+  §cSkyWars
+  §r
+  §fРежим: §a%mode%
+  §fСейчас играет §a%players% §fигроков
+  §eНажмите, чтобы занять очередь!
+  §r
+skywars_npc_ranked: |-
+  §cSkyWars
+  §r
+  §fРежим: §a%no_mode%
+  §fСейчас играет §a%ranked_no% §fигроков
+  %no_servers_message%
+  §r
+  
+message_create: '§c§lHyperServers §7| §fЗапрос был принят. Начинаем создание сервера.'
+message_create_waiting: '§c§lHyperServers §7| §fСервер создаётся... Подождите %hservers_time%'
+message_create_sucessfully: '§c§lHyperServers §7| §aСервер был успешно создан! Теперь игроки смогут играть на ваших серверах.'
+message_create_error: '§c§lHyperServers §7| §cПроизошла внутренняя ошибка при создании сервера. Причина: %hservers_reason%'
+message_quit_owner_server: |-
+  §fК сожалению, вы неможете играть на данном сервере,
+  §fпотому что, его владелец закрыл к нему доступ либо покинул сервер.
+  
+## Кор переподключение игрока
+rejoin_server_not_found: '§cУвы, мы не нашли игрового сервера, на котором Вы ранее находились. Начните игру на новых аренах (%rejoin_click%)'
+rejoin_found_server: '§aНедавно вы отключились играя на арене (%arena%), в режиме %mode%. Переподключаем вас туда...'
+
+## Кор информация о игроке
+whois_player: |-
+ §fИнфа об игроке %player%
+ §fVK: %vk%
+ §fИгровая группа: %group%
+ §fВыбранный язык: %language%
+ §fIP: %ip_player%
+ §r
+ §fНаходится на сервере: %server%
+ 
+
+
